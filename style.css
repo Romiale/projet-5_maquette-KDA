@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 body {
     
     margin:0;
@@ -24,7 +26,7 @@ nav{
     width:100%;
     height:15vh;
     box-sizing: border-box;
-    background: #d81550;
+    background: #D92950;
 }
 
 #logo{
@@ -40,6 +42,14 @@ nav{
     background:url(images/hero-background.jpg);
     background-size:contain;
     background-position:center; 
+    padding-bottom: 20vh;
+}
+
+#section2{
+    padding-top: 13vh;
+    background-color: #F1EFF3;
+    width: 100%;
+    height: 100vh;  
 }
 
 nav ul{
@@ -58,43 +68,143 @@ nav ul li{
 
 }
 nav ul li.active{
-text-decoration: underline;
-text-decoration-color: rgb(197, 20, 79);
-text-decoration-line: underline;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    text-decoration-color: rgb(197, 20, 79);
+    border-bottom: 2px solid rgb(211, 44, 100);
 
 } 
+nav ul li:hover{
+    text-decoration: underline;
+    margin-bottom: 5px;
+    text-decoration-color: rgb(197, 20, 79);
+    border-bottom: 2px solid rgb(211, 44, 100);
+}
 
 section#section1 div div h1 {
     font-size: 4.2em;
     text-align: center;
     color: white;
-    font-family: 'Montserrat Black',arial;
+    font-family: 'Montserrat', sans-serif;
     font-weight:bolder;
 }
 section#section1 div div h1 span{
  color: rgb(253, 242, 56);
 }
+p{
+    font-family: 'Roboto', sans-serif;
+}
 
 .flex{
     display: flex;
+    justify-content:space-evenly;
+    
+}
+.flexi{
+    display: flex;
     justify-content: center;
-    }
-.flex input{
+}
+.t-center{
+    text-align: center;
+}
+.white{
+    color:white;
+}
+.bg-red{
+    background-color:#D92950; ;
+}
+.mt-1{
+    margin-top:10vh;
+}
+.row-center{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+.em-1{
+font-size: 1em;
+}
+.em-1_2{
+    font-size: 1.2em;
+}
+.em-2{
+    font-size: 2em;
+}
+.logo{
+    width:4vw;
+    height:8vh;
+    color: #F47FA2;
+}
+
+.flexi input{
+    align-items: center;
     width: 19%;
     height: 10vh;
     border-radius: 10px;
     margin:0 0.5vw;
     background: rgb(255, 255, 255);
-    color:rgb(197, 20, 79);
+    color:#D92950;
     font-size: 1.2em;
     font-family: 'Roboto';
     font-weight: bold;
     border:solid white 2px;
 }
+
 .flex input:hover{
     background:rgba(180, 41, 87, 0.5);
     color: white;
 }
+#texaf-campus{
+    margin-top:4vh;
+    width:80%;
+    height: 60vh;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    float: left;
+}
+
+#kda_cohorte{
+    margin-left: -38vh;
+    width: 60%;
+    height: 40vh;
+    border-radius: 20px;
+    margin-top: 35vh;
+}
+#logo2{
+    display: flex;
+    flex-direction:column;
+    justify-content:start;
+    width:160%;
+    height: 70vh;
+    
+}
+#logo2 img{
+    margin-left: 5vw;
+    width: 35%;
+    height:35%;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #D92950;
+}
+#logo2 h2{
+    width: 100%;
+    height: 10vh;  
+    font-size: 2.8em;
+    color: #424345;
+    font-family:'Roboto', sans-serif;
+    
+}
+p.logo2{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.3em;
+    text-align:center;
+    margin-right: 2vw;
+    color: #424345;
+}
+#logo-p1{
+    margin-top: 20vh;
+}
+
+
 
  
 
