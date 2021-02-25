@@ -71,6 +71,12 @@ nav{
     height: 100vh; 
     padding-bottom: 30vh;
 }
+#section6{
+    background-color: #F1EFF3;
+    width: 100%;
+    height: 100vh; 
+    padding-top:5vh;
+}
 nav ul{
     list-style: none;
     float: right;
@@ -97,17 +103,17 @@ nav ul li:hover{
     text-decoration: underline;
     margin-bottom: 5px;
     text-decoration-color: rgb(197, 20, 79);
-    border-bottom: 2px solid rgb(211, 44, 100);
+    border-bottom: 4px solid rgb(211, 44, 100);
 }
 
-section#section1 div div h1 {
+section#section1 h1 {
     font-size: 4.2em;
     text-align: center;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight:bolder;
 }
-section#section1 div div h1 span{
+section#section1 h1 span{
  color: rgb(253, 242, 56);
 }
 .h3-t-white{
@@ -150,6 +156,9 @@ p{
 }
 .bg-red{
     background-color:#D92950; ;
+}
+.clr_cof{
+    color:#424345 ;
 }
 .mt-1{
     margin-top:10vh;
@@ -206,11 +215,11 @@ font-size: 1em;
 }
 
 #kda_cohorte{
-    margin-left: -38vh;
+    margin-left: -45vh;
     width: 60%;
-    height: 40vh;
+    height: 43vh;
     border-radius: 20px;
-    margin-top: 35vh;
+    margin-top: 40vh;
 }
 #logo2{
     display: flex;
@@ -356,15 +365,12 @@ height: 6vh;
     padding-bottom: 1em;
 }
 .pt-drap{
-    /* height: 10vh;
-    width: 4em; */
     display: flex;
     margin-top:3px;
     background: white;
     border-bottom-left-radius:20px;
     border-top-left-radius: 20px;
     margin-right:-4.2vw;
-    padding:-1px -5px;
 }
 .pt-drap img{
     width: 3.5em;
