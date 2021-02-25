@@ -51,6 +51,19 @@ nav{
     width: 100%;
     height: 100vh;  
 }
+#section3{
+    padding-top: 13vh;
+    background-color: #D92950;
+    width: 100%;
+    height: 100vh; 
+}
+#section4{
+    background-color: #F1EFF3;
+    width: 100%;
+    height: 100vh; 
+    padding-top:5vh;
+    
+}
 
 nav ul{
     list-style: none;
@@ -90,6 +103,21 @@ section#section1 div div h1 {
 }
 section#section1 div div h1 span{
  color: rgb(253, 242, 56);
+}
+section#section3 h3{
+    font-family: 'Roboto',sans-serif;
+    font-size: 2.5em;
+    color: white;
+    text-align: center;
+    margin-top: 15vh;
+
+}
+section#section4 h4{
+    font-family: 'Roboto',sans-serif;
+    font-size: 2.5em;
+    color: #3E1947;
+    text-align: center;
+    margin-top: 15vh;
 }
 p{
     font-family: 'Roboto', sans-serif;
@@ -150,7 +178,7 @@ font-size: 1em;
     border:solid white 2px;
 }
 
-.flex input:hover{
+.flexi input:hover{
     background:rgba(180, 41, 87, 0.5);
     color: white;
 }
@@ -179,30 +207,112 @@ font-size: 1em;
     
 }
 #logo2 img{
-    margin-left: 5vw;
-    width: 35%;
-    height:35%;
-    padding-bottom: 20px;
+    
+    margin-top: -5vh;
+    width: 25%;
+    height:25%;
+    margin-left:7vw;
+    padding-bottom: 15px;
     border-bottom: 2px solid #D92950;
 }
+
+ 
 #logo2 h2{
     width: 100%;
     height: 10vh;  
     font-size: 2.8em;
+    font-weight: 550;
+    font-style:initial;
     color: #424345;
     font-family:'Roboto', sans-serif;
+    
     
 }
 p.logo2{
     font-family: 'Roboto',sans-serif;
     font-size: 1.3em;
+    font-weight: 650;
     text-align:center;
-    margin-right: 2vw;
+    width: 20vw;
     color: #424345;
 }
 #logo-p1{
     margin-top: 20vh;
 }
+img#paper, img#cup{
+    width:32%;
+    height:32%;
+    margin-left:6vw;
+}
+#parteners img{
+width: 10vw;
+height: 6vh;
+
+}
+#parteners{
+    margin-top: 20vh;    
+    align-items: center;
+}
+#parteners img:nth-child(4){
+    height: 12vh;
+    width: 6vw;
+}
+
+#bage1{
+    background: #FFFFFF;
+    padding-top: 7vh;
+    width: 40vw;
+    height: 40vh;
+    padding:1 5;
+    border-top: 10px solid #FDF238;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+#bage2{
+    background: #FFFFFF;
+    padding-top: 7vh;
+    width: 40vw;
+    height: 40vh;
+    border-top: 10px solid #E90046;
+    margin-left: -6vw;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+#bage1 span, #bage2 span{
+    
+    font-size: 2em;
+    font-weight: 500;
+    font-style:initial;
+    color: #E90046;
+    text-align: center;
+    font-family:'Roboto', sans-serif;
+}
+#bage1 .flexi .transpa, #bage2 .flexi .transpa{
+    background: #E90046;
+    color:white;
+    width: 50%;
+    height: 10vh;
+    border-radius: 10px;
+    margin:0 0.5vw;
+    font-size: 1.2em;
+    font-family: 'Roboto';
+    font-weight: bold;
+    border:solid #D92950 2px;
+    padding:5px 10px ;
+}
+
+#bage1 .flexi .transpa:hover, #bage2 .flexi .transpa:hover{
+    border:solid #D92950 2px;
+    background: white;
+    color:#E90046;
+}
+#bage1 p, #bage2 p{
+    text-align: center;
+    margin:3vh 3vw -3vh 3vw ;
+    font-family: sans-serif;
+    font-weight:200;
+}
+
 
 
 
