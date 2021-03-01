@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 body {
     
@@ -109,7 +110,8 @@ nav{
 #section10{
     background:white;
     height: 100%;
-    width: 100vw;
+    width: 120vw;
+    
 }
 #section11{
     height: 100vh;
@@ -117,7 +119,14 @@ nav{
     padding-bottom: 60vh;
     background: #1E1925;
 }
-#
+#sect1_emploi{
+    margin-top: 20vh;
+    height: 160vh;
+    width: 100vw;
+    background: #FFFFFF;
+    padding-bottom: 30vh;
+    margin-bottom: 30vh;
+}
 footer{
     background:#2D2D2D;
     color: #DEDEDE;
@@ -188,14 +197,21 @@ nav ul li:hover{
 }
 
 section#section1 h1 {
-    font-size: 4.2em;
+    font-size: 75px;
+    line-height: 90px;
     text-align: center;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-weight:700;
+    font-weight:900;
 }
 section#section1 h1 span{
  color: rgb(253, 242, 56);
+ font-family: 'Montserrat', sans-serif;
+ text-align: center;
+ font-size: 75px;
+ line-height: 90px;
+
+
 }
 .h3-t-white{
     font-family: 'Montserrat',sans-serif;
@@ -324,6 +340,9 @@ p,span{
 .h-10{
     height: 10vh;
 }
+.em3{
+    font-size: 3em;
+}
 .em-1{
 font-size: 1em;
 }
@@ -332,6 +351,9 @@ font-size: 1em;
 }
 .ml{
     margin-left: 1.3em;
+}
+.ml1{
+    margin-left: 0.5em;
 }
 .em-2{
     font-size: 2em;
@@ -362,8 +384,8 @@ font-size: 1em;
     background: rgb(255, 255, 255);
     color:#D92950;
     font-size: 1.2em;
-    font-family: 'Montserrat',sans-serif;
-    font-weight: 400;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
     border:solid white 2px;
 }
 
@@ -699,13 +721,22 @@ height: 6vh;
     font-size: 2.5em;
     margin-left: 2.3em;
 }
-#section8 div div p{
+.mtsr400{
         font-family: 'Montserrat', sans-serif;
         font-weight:400;
         color: #444547;
         line-height:25px;
         margin-top: ⁻6em;
         margin-left: 6em;
+        font-size: 16px;
+}
+.mtsr-s-400{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+    color: #444547;
+    line-height:25px;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
 }
 #section8 div {
     width: 91%;
@@ -937,4 +968,51 @@ height: 6vh;
     height: 27%;
     margin-bottom: 1em;
     
+}
+#sect1_emploi div div{
+    width: 42vw;
+    height:190vh;
+    background: #F1EFF3;
+    margin-right: 40px;
+    margin-top: 5em;
+    border-radius: 10px;
+    
+}
+#a-btn1{
+    height: 5em;
+    width: 35vw;
+    background: #D92950;
+    color: #FFFFFF;
+    font-size: 1em;
+    border: none;
+    margin:1em 3.5vw;
+    border-radius: 10px;
+    text-align:center;
+}
+.btn1{
+    height: 4em;
+    width: 35vw;
+    background: #D92950;
+    color: #FFFFFF;
+    font-family:'Montserrat',sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    border: none;
+    margin:2em 3.5vw;
+    border-radius: 10px;
+}
+#a-btn1 a:hover{
+    color:inherit;
+}
+.btn1:hover,#a-btn1:hover{
+    background: none;
+    border: solid 2px #D92950;
+    color: black;
+}
+#a-btn1 a{
+    padding:1em;
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Montserrat';
+    font-weight: 700;
 }
