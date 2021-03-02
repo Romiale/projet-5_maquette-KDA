@@ -10,20 +10,10 @@ body {
     
     margin:0;
     padding:0;
-    /* font-family: 'Roboto'; */
+    font-family: 'Roboto';
     }
-/* #cookees{
-    width: 100%;
-    position:relative;
-    left: 0;
-    top: 0;
-    height:6vh;
-    background:#31033bf8;
-    text-align: center;
-    color:white;
-    font-size:1.2em;
-    padding-top:10px;
-} */
+/* parametres pour la bare de navigation */
+
 nav{
     position:fixed;
     top: 0;
@@ -33,14 +23,47 @@ nav{
     box-sizing: border-box;
     background: #D92950;
 }
-
+/* logo kda */
 #logo{
     width: 8%;
     height: 60%;
     margin: 15px 20px;
 }
 
-/* toutes les sections */
+/* coté droit de la bare de navigation */
+nav ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li{
+    font-size: 1em;
+    color: white;
+    margin: 5vh 3vw 0vh 1vw;
+    font-weight: bold;
+    font-family: sans-serif;
+
+}
+nav ul li.active{
+    text-decoration: underline;
+    margin-bottom: 5px;
+    text-decoration-color: rgb(197, 20, 79);
+    border-bottom: 2px solid rgb(211, 44, 100);
+
+} 
+nav ul li:hover{
+    text-decoration: underline;
+    margin-bottom: 5px;
+    text-decoration-color: rgb(197, 20, 79);
+    border-bottom: 4px solid rgb(211, 44, 100);
+}
+
+
+
+/* section1 page d'acceuil */
+
 #section1{
     margin-top: 10vh;
     padding-top: 6%;
@@ -53,18 +76,153 @@ nav{
     padding-bottom: 15vh;
 }
 
+section#section1 h1 {
+    font-size: 75px;
+    line-height: 90px;
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:900;
+}
+section#section1 h1 span{
+    color: rgb(253, 242, 56);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 75px;
+    line-height: 90px;
+}
+/* boutons du milieu */
+.btn-transpa{
+    align-items: center;
+    width: 19%;
+    height: 10vh;
+    border-radius: 10px;
+    margin:0 0.5vw;
+    background: rgb(255, 255, 255);
+    color:#D92950;
+    font-size: 1.2em;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    border:solid white 2px;
+}
+
+.btn-transpa:hover, .flexi input:hover{
+    background:none;
+    color: white;
+}
+.logo{
+    width:4vw;
+    height:8vh;
+}
+
+#block_logo{
+    opacity: 0.5;
+}
+/* fin section1 */
+
+
+/* debut section2 */
 #section2{
     padding-top: 13vh;
     background-color: #F1EFF3;
     width: 100%;
     height: 100vh;  
 }
+
+
+#texaf-campus{
+    margin-top:4vh;
+    width:80%;
+    height: 60vh;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    float: left;
+}
+
+#kda_cohorte{
+    margin-left: -45vh;
+    width: 60%;
+    height: 43vh;
+    border-radius: 20px;
+    margin-top: 40vh;
+}
+
+
+#logo2{
+    display: flex;
+    flex-direction:column;
+    justify-content:start;
+    width:160%;
+    height: 70vh;
+    
+}
+#logo2 img{
+    
+    /* margin-top: 5vh; */
+    width: 25%;
+    height:25%;
+    margin-left:7vw;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #D92950;
+}
+
+ 
+#logo2 h2{
+    width: 100%;
+    height: 10vh;  
+    font-size: 2.8em;
+    font-weight: 550;
+    font-style:initial;
+    color: #424345;
+    font-family:'Roboto', sans-serif;
+    
+    
+}
+
+img#paper, img#cup{
+    width:70px;
+    height:80px;
+    margin-left:6vw;
+    padding-left:0;
+    padding-bottom: 2em;
+    border-bottom: 2px solid #D92950;
+}
+
+p.logo2{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.3em;
+    font-weight: 650;
+    text-align:center;
+    width: 20vw;
+    color: #424345;
+}
+
+/* fin section2 */
+
+/* debut section trois "nous avons le plaisir de travailler avec" */
 #section3{
     padding-top: 13vh;
     background-color: #D92950;
     width: 100%;
     height: 80vh; 
 }
+
+#parteners img{
+    width: 10vw;
+    height: 6vh;
+    }
+div#parteners{
+        margin-top: 20vh;    
+        align-items: center;
+    }
+#parteners img:nth-child(4){
+        height: 12vh;
+        width: 6vw;
+    }
+/* fin section 3 */
+
+/* debut section 4 */
+
 #section4{
     background-color: #F1EFF3;
     width: 100%;
@@ -109,8 +267,8 @@ nav{
 }
 #section10{
     background:white;
-    height: 100%;
-    width: 120vw;
+    height: 170vh;
+    width: 100vw;
     
 }
 #section11{
@@ -167,52 +325,7 @@ footer div p{
 /* fin sections */
 
 
-nav ul{
-    list-style: none;
-    float: right;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-nav ul li{
-    font-size: 1em;
-    color: white;
-    margin: 5vh 3vw 0vh 1vw;
-    font-weight: bold;
-    font-family: sans-serif;
 
-}
-nav ul li.active{
-    text-decoration: underline;
-    margin-bottom: 5px;
-    text-decoration-color: rgb(197, 20, 79);
-    border-bottom: 2px solid rgb(211, 44, 100);
-
-} 
-nav ul li:hover{
-    text-decoration: underline;
-    margin-bottom: 5px;
-    text-decoration-color: rgb(197, 20, 79);
-    border-bottom: 4px solid rgb(211, 44, 100);
-}
-
-section#section1 h1 {
-    font-size: 75px;
-    line-height: 90px;
-    text-align: center;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight:900;
-}
-section#section1 h1 span{
- color: rgb(253, 242, 56);
- font-family: 'Montserrat', sans-serif;
- text-align: center;
- font-size: 75px;
- line-height: 90px;
-
-
-}
 .h3-t-white{
     font-family: 'Montserrat',sans-serif;
     font-size: 2.5em;
@@ -358,11 +471,7 @@ font-size: 1em;
 .em-2{
     font-size: 2em;
 }
-.logo{
-    width:4vw;
-    height:8vh;
-    color: #F47FA2;
-}
+
 .ml-1{
     /* margin-left:-2vw; */
     margin-right:1vw;
@@ -375,104 +484,12 @@ font-size: 1em;
     flex-direction:row;
     justify-content: center;
 }
-.transpa{
-    align-items: center;
-    width: 19%;
-    height: 10vh;
-    border-radius: 10px;
-    margin:0 0.5vw;
-    background: rgb(255, 255, 255);
-    color:#D92950;
-    font-size: 1.2em;
-    font-family: 'Roboto',sans-serif;
-    font-weight: 700;
-    border:solid white 2px;
-}
 
-.transpa:hover, .flexi input:hover{
-    background:none;
-    color: white;
-}
-#texaf-campus{
-    margin-top:4vh;
-    width:80%;
-    height: 60vh;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    float: left;
-}
 
-#kda_cohorte{
-    margin-left: -45vh;
-    width: 60%;
-    height: 43vh;
-    border-radius: 20px;
-    margin-top: 40vh;
-}
-#logo2{
-    display: flex;
-    flex-direction:column;
-    justify-content:start;
-    width:160%;
-    height: 70vh;
-    
-}
-#logo2 img{
-    
-    /* margin-top: 5vh; */
-    width: 25%;
-    height:25%;
-    margin-left:7vw;
-    padding-bottom: 15px;
-    border-bottom: 2px solid #D92950;
-}
-
- 
-#logo2 h2{
-    width: 100%;
-    height: 10vh;  
-    font-size: 2.8em;
-    font-weight: 550;
-    font-style:initial;
-    color: #424345;
-    font-family:'Roboto', sans-serif;
-    
-    
-}
-#block_logo{
-    opacity: 0.5;
-}
-p.logo2{
-    font-family: 'Roboto',sans-serif;
-    font-size: 1.3em;
-    font-weight: 650;
-    text-align:center;
-    width: 20vw;
-    color: #424345;
-}
 #logo-p1{
     margin-top: 20vh;
 }
-img#paper, img#cup{
-    width:70px;
-    height:80px;
-    margin-left:6vw;
-    padding-left:0;
-    padding-bottom: 2em;
-    border-bottom: 2px solid #D92950;
-}
-#parteners img{
-width: 10vw;
-height: 6vh;
-}
-#parteners{
-    margin-top: 20vh;    
-    align-items: center;
-}
-#parteners img:nth-child(4){
-    height: 12vh;
-    width: 6vw;
-}
+
 
 #bage1{
     background: #FFFFFF;
@@ -499,12 +516,12 @@ height: 6vh;
     font-size: 2em;
     font-weight: 500;
     font-style:initial;
-    color: #E90046;
+    color: #D92950;
     text-align: center;
     font-family:'Roboto', sans-serif;
 }
-#bage1 .flexi .transpa, #bage2 .flexi .transpa{
-    background: #E90046;
+#bage1 .flexi .btn-transpa, #bage2 .flexi .btn-transpa{
+    background: #D92950;
     color:white;
     width: 53%;
     height: 10vh;
@@ -517,7 +534,7 @@ height: 6vh;
     padding:5px 10px ;
 }
 
-#bage1 .flexi .transpa:hover, #bage2 .flexi .transpa:hover{
+#bage1 .flexi .btn-transpa:hover, #bage2 .flexi .btn-transpa:hover{
     border:solid #D92950 2px;
     background: none;
     color:#E90046;
@@ -885,11 +902,11 @@ height: 6vh;
 
 }
 
-.illus_bage10 div img{
+/* .illus_bage10 div img{
     height: 97%;
     width: 98%;
     
-}
+} */
 .illus_bage10 div #img1_2{
     height:22vh;
     border-bottom-left-radius: 10px;
