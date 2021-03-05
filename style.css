@@ -12,6 +12,7 @@ body {
     margin:0;
     padding:0;
     font-family: 'Roboto';
+    overflow-x: hidden;
     }
 /* parametres pour la bare de navigation */
 
@@ -33,19 +34,21 @@ nav{
 
 /* coté droit de la bare de navigation */
 nav ul{
-
-    list-style: none;
-    float: right;
-    margin: 15px;
+    width: 400px;
+    margin-right:40px;
+    margin-top:20px;
     padding: 0;
     display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    list-style: none;
+    float:right;
     text-decoration: none;
 }
+
 nav ul li a{
-    margin-top: 15px;
     font-size: 16px;
     color: white;
-    margin: 5vh 3vw 0vh 1vw;
     font-weight: 600;
     line-height: 24px;
     font-family:'Roboto',sans-serif;
@@ -54,7 +57,6 @@ nav ul li a{
 }
 nav ul li a.active{
     text-decoration: underline;
-    margin-bottom: 5px;
     text-decoration-color: rgb(197, 20, 79);
     border-bottom: 2px solid rgb(211, 44, 100);
     text-decoration: none;
@@ -83,7 +85,7 @@ nav ul li a:hover{
     background:url(images/hero-background.jpg);
     background-size:contain;
     background-position:center; 
-    padding-bottom: 25vh;
+    padding-bottom: 18vh;
 }
 
 section#section1 h1 {
@@ -94,6 +96,15 @@ section#section1 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight:900;
     margin-bottom: -8vh;
+}
+#section1 p{
+    font-size:16px;
+    line-height: 24px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 2em;
 }
 section#section1 h1 span{
     color: rgb(253, 242, 56);
@@ -107,8 +118,8 @@ section#section1 h1 span{
     align-items: center;
     width: 19%;
     height: 10vh;
-    border-radius: 10px;
-    margin:0 0.5vw;
+    border-radius: 15px;
+    margin:0 0.7vw;
     background: rgb(255, 255, 255);
     color:#D92950;
     font-size: 1.2em;
@@ -124,6 +135,7 @@ section#section1 h1 span{
 .logo_technos{
     width:4vw;
     height:8vh;
+    margin-top: -3em;
 }
 
 #block_logo{
@@ -140,25 +152,25 @@ section#section1 h1 span{
     background-color: #F1EFF3;
     width: 100%;
     height:100vh; 
-    padding-bottom:20vh;
+    padding-bottom:16vh;
 }
 
-
 #texaf-campus{
-    margin-top:4vh;
-    width:80%;
-    height: 60vh;
+    margin-top:7vh;
+    width:521.667px;
+    height:391.25px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     float: left;
+    margin-left: -7vh;
 }
 
 #kda_cohorte{
-    margin-left: -45vh;
-    width: 60%;
-    height: 43vh;
+    margin-left: 35vh;
+    width:347.7767px;
+    height:260.817px;
     border-radius: 20px;
-    margin-top: 40vh;
+    margin-top: -35vh;
 }
 
 
@@ -166,33 +178,49 @@ section#section1 h1 span{
     display: flex;
     flex-direction:column;
     justify-content:start;
-    width:160%;
-    height: 70vh;
-    
+    width:772px;
+    height:539px;
 }
-
 #devs_kda div{
-    width: 397.5px;
-    height: 169px;
-    margin-left:7vw;
+    display: flex;
+    justify-content: center;
+    width:772.333px;
+    height:345px;
+}
+#devs_kda div div{
+    width: 391.7px;
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 24px;
+}
+#devs_kda div:nth-child(2) div{
+    width: 391.7px;
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 #devs_kda img{
     width: 50px;
     height:90px;
-    margin-left:7vw;
-    padding-bottom: 15px;
-    border-bottom: 2px solid #D92950;
+    margin: 0 auto;
+    padding-bottom:24px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #EA0000;
 }
 
  
 #devs_kda h2{
-    width: 100%;
-    height: 10vh;  
-    font-size: 2.8em;
-    font-weight: 550;
-    font-style:initial;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 48px;
     color: #424345;
-    font-family:'Roboto', sans-serif;
     
     
 }
@@ -200,19 +228,22 @@ section#section1 h1 span{
 img#paper, img#cup{
     width:50px;
     height:90px;
-    margin-left:7vw;
+    margin: 0 auto;
     padding-left:0;
-    padding-bottom: 2em;
-    border-bottom: 2px solid #D92950;
+    padding-bottom:24px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #EA0000;
 }
 
 p.logo2{
-    font-family: 'Roboto',sans-serif;
-    font-size: 1.3em;
-    font-weight: 650;
+    font-family: 'Montserrat',sans-serif;
+    font-size:20px;
+    font-weight:700;
+    line-height: 24px;
     text-align:center;
-    width: 20vw;
+    width: 356.175px;
     color: #424345;
+    margin: 0 auto;
 }
 
 /* fin section2 */
@@ -229,18 +260,81 @@ p.logo2{
     padding-bottom: 15vh;
 }
 
-#parteners img{
-    width: 10vw;
-    height: 6vh;
-    }
-div#parteners{
-        margin-top: 20vh;    
-        align-items: center;
-    }
-#parteners img:nth-child(4){
-        height: 12vh;
-        width: 6vw;
-    }
+#slider figure{
+    width: 200%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+     /* overflow:hidden; */
+     position: relative;
+     margin: 0;
+     left: 0;
+     animation: 30s slider infinite;
+}
+#slider  figure div{
+    width:234px;
+    height:200px;
+    display: flex;
+    justify-content: center;
+ }
+ @keyframes slider  {
+     0%{
+         left: 0;
+     }
+     5%{
+         left: 0;
+     }
+     10%{
+         left: -20%;
+     }
+     15%{
+         left:-20% ;
+     }
+
+     20%{
+         left: -40%;
+     }
+     25%{
+         left: -40%;
+     }
+     30%{
+         left: -60%;
+     }
+     35%{
+         left: -60%;
+     }
+     40%{
+         left: -80%;
+     }
+     45%{
+         left: -80%;
+     }
+     50%{
+         left:-90%;
+     }
+     55%{
+         left: -90%;
+     }
+     60%{
+         left: -100%;
+     }
+     65%{
+         left: 100%;
+     }
+     70%{
+         left: 110%;
+     }
+     75%{
+         left: 110%;
+     }
+    
+ }
+ #slider  figure div img{
+    max-width:80px;
+    height:80px;
+
+ }
+
 /* fin section 3 */
 
 /* debut section 4 */
@@ -669,7 +763,7 @@ footer #email_btn{
     border-bottom-right-radius: 10px;
     border: none;
     font-family: 'Montserrat',sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 1em;
     color: #FFFFFF;
 }
@@ -1008,4 +1102,10 @@ font-size: 1em;
     color: inherit;
     font-family: 'Montserrat';
     font-weight: 700;
+}
+#form_prt1 input::placeholder,#form_prt1 select{
+    font-family: 'Roboto';
+    font-weight:700;
+    font-size: 11px;
+    
 }
