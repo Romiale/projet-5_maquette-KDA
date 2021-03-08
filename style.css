@@ -23,6 +23,7 @@ nav{
     left: 0;
     width:100%;
     height:12vh;
+    z-index: 999;
     box-sizing: border-box;
     background: #D92950;
 }
@@ -84,7 +85,7 @@ hr{
     margin-top: 10vh;
     padding-top: 6%;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background:url(images/hero-background.jpg);
     background-size:contain;
@@ -154,7 +155,7 @@ section#section1 h1 span{
     flex-direction: column;
     justify-content: center;
     background-color: #F1EFF3;
-    width: 100%;
+    width: 100vw;
     height:100vh; 
     padding-bottom:16vh;
 }
