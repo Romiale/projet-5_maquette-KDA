@@ -662,24 +662,14 @@ div.img-parent{
 #bage1-sec6{
     width: 52vw;
 }
-#block1{
+#block1, #block2, #block3{
     width: 50vw;
 }
-#block2{
-    width:50vw ;
-}
-#block1 div{
+
+#block1 div, #block2 div, #block3 div{
     width:10vw;
 }
-#block2 div{
-    width: 10vw;
-}
-#block3{
-    width: 50vw;
-}
-#block3 div{
-    width: 10vw;
-}
+
 #bage2-sec6 ol li{
    
     font-family: 'Ubuntu Mono', monospace;
