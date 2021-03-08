@@ -1224,6 +1224,13 @@ button, input, optgroup, select, textarea {
 #form_part3 select{
     width:88.8vw;
 }
+#form_part3 p{
+    font-family: 'Montserrat', sans-serif;
+        font-weight:400;
+        color: #fff;
+        line-height:25px;
+        font-size: 16px;
+}
 
 #sect1_emploi div div{
     width: 42vw;
