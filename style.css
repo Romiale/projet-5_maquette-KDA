@@ -17,6 +17,7 @@ body {
 /* parametres pour la bare de navigation */
 
 nav{
+    display:block;
     position:fixed;
     top: 0;
     left: 0;
@@ -56,20 +57,23 @@ nav ul li a{
 
 }
 nav ul li a.active{
-    text-decoration: underline;
-    text-decoration-color: rgb(197, 20, 79);
-    border-bottom: 2px solid rgb(211, 44, 100);
-    text-decoration: none;
-
+    border-bottom:1.5px solid #FF046B;
 } 
-nav ul li a:hover{
-    text-decoration: underline;
-    margin-bottom: 5px;
-    text-decoration-color: rgb(197, 20, 79);
-    border-bottom: 4px solid rgb(211, 44, 100);
+
+hr{
+    margin-top: -3px;
+    color:#FF046B;
+    width:0%;
+    float: left;
+    height: 1px;
+    background:#FF046B;;
 }
-
-
+ li a:hover + hr{
+    color: #FF046B;
+    width: 100%;
+    transition:linear 0.4s;
+    text-decoration: none;
+}
 
 /* section1 page d'acceuil */
 
@@ -170,7 +174,7 @@ section#section1 h1 span{
     width:347.7767px;
     height:260.817px;
     border-radius: 20px;
-    margin-top: -35vh;
+    margin-top: -30vh;
 }
 
 
@@ -259,20 +263,34 @@ p.logo2{
     height: 60vh; 
     padding-bottom: 15vh;
 }
-
+#section3 h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size:2.5em;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-top: 4em;
+    margin-bottom: 0;
+    text-align: center;
+ 
+}
+div.img-parent{
+    width: 88vw;
+    height: 40vh;
+    overflow:hidden;
+    
+}
 #slider figure{
-    width: 200%;
+    width:320%;
     display: flex;
     flex-direction: row;
     align-items: center;
-     /* overflow:hidden; */
      position: relative;
      margin: 0;
      left: 0;
-     animation: 30s slider infinite;
+     animation: 25s slider infinite;
 }
 #slider  figure div{
-    width:234px;
+    width:20%;
     height:200px;
     display: flex;
     justify-content: center;
@@ -281,57 +299,81 @@ p.logo2{
      0%{
          left: 0;
      }
-     5%{
+     4.5%{
          left: 0;
      }
-     10%{
+     9%{
          left: -20%;
      }
-     15%{
-         left:-20% ;
+     13.5%{
+         left: -20% ;
      }
 
-     20%{
+     18%{
          left: -40%;
      }
-     25%{
+     22.5%{
          left: -40%;
      }
-     30%{
+     27%{
          left: -60%;
      }
-     35%{
+     31.5%{
          left: -60%;
      }
-     40%{
+     36%{
+         left: -80%;
+     }
+     40.5%{
          left: -80%;
      }
      45%{
-         left: -80%;
+         left:-100%;
      }
-     50%{
-         left:-90%;
-     }
-     55%{
-         left: -90%;
-     }
-     60%{
+     49.5%{
          left: -100%;
      }
-     65%{
-         left: 100%;
+     54%{
+         left: -120%;
      }
-     70%{
-         left: 110%;
+     58.5%{
+         left: -120%;
      }
-     75%{
-         left: 110%;
+     63%{
+         left: -140%;
      }
-    
+     67.5%{
+         left: -140%;
+     }
+     72%{
+        left: -160%;
+    }
+    76.5%{
+        left: -160%;
+    }
+    81%{
+        left:-180%;
+    }
+    85.5%{
+        left: -180%;
+    }
+    90%{
+        left: -200%;
+    }
+    94.5%{
+        left: -200%;
+    }
+    100%{
+        left: -220%;
+    }
+    100%{
+        left: -220%;
+    }
  }
  #slider  figure div img{
-    max-width:80px;
-    height:80px;
+   
+   margin: auto auto;
+   max-height: 160px;
 
  }
 
@@ -342,14 +384,22 @@ p.logo2{
 #section4{
     background-color: #F1EFF3;
     width: 100%;
-    height: 100vh; 
-    padding-top:5vh;
+    height: 95vh; 
+    padding-top: 13vh;
+}
+#section4 h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size:2.3em;
+    font-weight: 700;
+    color: #381241;
+    text-align: center;
+    margin-bottom: 10vh;
 }
 
 #bage1{
     background: #FFFFFF;
     padding-top: 7vh;
-    width: 40vw;
+    width: 42vw;
     height: 40vh;
     padding:1 5;
     border-top: 10px solid #FDF238;
@@ -359,10 +409,10 @@ p.logo2{
 #bage2{
     background: #FFFFFF;
     padding-top: 7vh;
-    width: 40vw;
+    width: 42vw;
     height: 40vh;
     border-top: 10px solid #E90046;
-    margin-left: -6vw;
+    margin-left: -4vw;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -374,6 +424,7 @@ p.logo2{
     color: #D92950;
     text-align: center;
     font-family:'Roboto', sans-serif;
+
 }
 #bage1 .flexi .btn-transpa, #bage2 .flexi .btn-transpa{
     background: #D92950;
@@ -386,7 +437,7 @@ p.logo2{
     font-family: 'Montserrat',sans-serif;
     font-weight: 700;
     border:solid #D92950 2px;
-    padding:5px 10px ;
+    
 }
 
 #bage1 .flexi .btn-transpa:hover, #bage2 .flexi .btn-transpa:hover{
@@ -413,62 +464,133 @@ p.logo2{
 
 .bage-sec5{
     margin-top: 10vh;
-    width: 83%;
-    height: 80%;
+    width: 90%;
+    height: 75%;
     border-radius: 10px;
 }
 
 #logo5{
-    margin-left: 6vw;
+    width: 300%;
+    margin-left: 1.5vw;
+    animation: 23s work infinite;
+    position:absolute;
+
+ }
+.parent{
+    width: 90%;
+    height: 95%;
+    overflow: hidden;
+    margin: auto auto;
+    box-sizing: border-box;
+    position:relative;
 }
 
-#logo5 div div, #logo5 div div a{
+@keyframes work {
+    0%{
+        left: 0;
+    }
+    8.3%{
+        left: 0;
+    }
+    16.6%{
+        left: -33.3%;
+    }
+    24.9%{
+        left: -33.3% ;
+    }
+
+    33.2%{
+        left: -66.6%;
+    }
+    41.5%{
+        left: -66.6%;
+    }
+    49.8%{
+        left: -99.9%;
+    }
+    58.1%{
+        left: -99.9%;
+    }
+    66.4%{
+        left: -133.2%;
+    }
+    74.7%{
+        left: -133.2%;
+    }
+    83%{
+        left:-166.5%;
+    }
+    91.3%{
+        left: -166.5%;
+    }
+    99.6%{
+        left: -199.8%;
+    }
+    99.6%{
+        left: -199.8%;
+    }
+}
+   
+
+.rom{
+    width: 360px;
+    height: 76.4px;
+}
+.client{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 360px;
+    height: 33.6px;
+    background-color:#D92950;
+
+}
+.client p, a{
     font-size: 11px;
-    line-height:7px;
+    line-height:10px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration:none;
     font-weight: 400;
     color:white;
-    height: 5vh;
-    width:83%;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: unset;
-    
+    position:static;
+    margin: 0 auto;
 }
-.description{
+.tech{
+
+    font-family: Ubuntu Mono,monospace;
+    font-size: .7rem;
+    background: #ed0058;
+    padding: 3px;
+    width: 360px;
+    height: 26.8px;
+    background-color:#E90046;
     display: flex;
-    flex-direction:row;
-    align-content: flex-end;
+    align-items: center;
+    color: white;
+    align-items: center;
 }
-.pt-logo{
-    padding-top: 1em;
-    background: #E90046;
-    padding-bottom: 1em;
-}
-.pt-drap{
-    display:flex;
-    flex-direction:row;
-    justify-content:;
-    margin-top:3px;
-    background:#fff;
-    border-bottom-left-radius:20px;
+.badge{
+    background: #fff;
+    padding: 0;
+    height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     border-top-left-radius: 20px;
-    margin-right: -55px;
+    border-bottom-left-radius: 20px;
+
 }
-.pt-drap img{
-    width: 25px;
-    height: 25px;
-    border-radius: 30px;
-    margin-top: 4px;
-}
-.pt-drap p{
-    width: 100%;
-    font-size: 1.1em;
-    color:#E90046;
-    margin-bottom:20px;
-    margin-left: 10px;
-    text-align: center;
-    font-family: 'Roboto',sans-serif;
-    font-weight: 400;
-}
+
+
+
+
+
 /* fin section 5 */
 #section6{
     background-color: #FFFFFF;
@@ -579,24 +701,35 @@ p.logo2{
 }
 
 #section7 div div {
-    flex-direction:row;
-    align-items: center;
-    margin-right: -30px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    width: 300px;
+    height: 124px;
+    position: relative;
 }
 #section7 div div p{
     font-family: 'Ubuntu Mono', monospace;
     font-size: 21px;
-    margin-right: -35px;
     font-weight: 700;
     color: white;
+    width: auto;
+    margin: 0 auto;
 }
 #section7 div div img:nth-child(1){
     border: solid 1px white;
     padding:1.1em;
     border-radius: 10px;
     height: 2em;
-    width: 2em;
-    margin-right: -35px;
+    width: 2em; 
+}#section7 div div img::after{
+    content: "arrow";
+    color:white ;
+    /* border: solid 1px white;
+    padding:1.1em;
+    border-radius: 10px;
+    height: 2em;
+    width: 2em;  */
 }
 #section7 div div img:nth-child(2){
     width:2em;
@@ -673,6 +806,7 @@ p.logo2{
     line-height:48px;
     font-size: 2.5em;
     margin-left: 2.3em;
+    margin-top:10px;
 }
 
 #part2_sec8 div div p{
@@ -757,7 +891,7 @@ footer #email_foot{
 }
 footer #email_btn{
     width: 9vw;
-    height: 9vh;
+    height: 8.5vh;
     background: #D92950;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -780,24 +914,30 @@ footer div p{
 
 footer div img{
     
-    width: 2em;
-    height: 2em;
+    width: 1.6em;
+    height: 1.6em;
     margin-right: 1em;
     color: #D92950;
     
 }
 footer div div a{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+    font-style: normal;
     text-decoration: none;
+
 }
-footer div div a:hover {
-    text-decoration: underline;
-    color:#f02663;
+footer div div a:hover + hr {
+    color: #FF046B;
+    width: 100%;
+    transition:linear 1s;
+    text-decoration: none;
 }
 #reseaux{
     margin-top: 8vh;
-    display: flex;
-    flex-direction: row;
-    justify-content:start;
+    
 }
 /* fin sections */
 
@@ -995,6 +1135,14 @@ font-size: 1em;
     margin-left: 1em;
     padding-top: 2.5em;
     text-align: center;
+ }
+ #section10 div div p{
+    width:20vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+    color: #444547;
+    line-height:25px;
+     
  }
  .title{
     font-family: 'Roboto',sans-serif;
