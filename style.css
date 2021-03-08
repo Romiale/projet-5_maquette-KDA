@@ -65,13 +65,14 @@ hr{
     margin-top: -3px;
     color:#FF046B;
     width:0%;
-    float: left;
     height: 1px;
-    background:#FF046B;;
+    background:#FF046B;
+    margin-left: -3px;
 }
  li a:hover + hr{
     color: #FF046B;
     width: 100%;
+    background:#FF046B;
     transition:linear 0.4s;
     text-decoration: none;
 }
@@ -713,18 +714,18 @@ div.img-parent{
     border-radius: 10px;
     height: 2em;
     width: 2em; 
-}#section7 div div img::after{
-    content: "arrow";
-    color:white ;
-    /* border: solid 1px white;
-    padding:1.1em;
-    border-radius: 10px;
-    height: 2em;
-    width: 2em;  */
-}
-#section7 div div img:nth-child(2){
+    margin-right: 0 1em 2em 0;
+    
+
+}#section7 div div div{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-left: 3.2em;
+  }
+#section7 div img{
     width:2em;
-    margin-left: 2vw;
+    margin: 2em 1em 1em 1em;
 }
 
 #section7 input{
@@ -859,6 +860,11 @@ div.img-parent{
     font-weight: 700;
     font-size: 1em;
 } 
+#form_part3 textarea{
+    resize: none;
+    overflow-y: scroll;
+    height: 134px;
+}
 #form_part3 #bg-dark:hover{
     background: none;
     border: 2px solid #D92950;
@@ -1057,7 +1063,7 @@ font-size: 1em;
 .flexi_col{
     display:flex;
     flex-direction:row;
-    justify-content: center;
+    justify-content:center;
 }
 .txt-move{
     color: #3E1947;
@@ -1146,30 +1152,67 @@ font-size: 1em;
     text-decoration: none;
     color: #2196E6;
 }
-.form_inp{
-    width: 42vw;
+.input-parent{
+    width: 1300px;
+    height: auto;
+    margin: 0;
+}
+.form-inp{
+    margin-left: 4em;
+    width: 41vw;
     height: 30vh;
     margin-top: 1.5em;
-    
-}
-.form_inp select{
-    width: 101.2%;
-    height: 20%;
 }
 
-.form_inp * {
+button, input, optgroup, select, textarea {
+    margin: 0;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.form-control {
+    height: auto !important;
+}
+.form-control {
+    margin-top: 1em;
+    display: block;
     width: 100%;
-    height:17%;
-    margin: 0 auto;
-    margin-top: 2.5%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0;
+    -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
 }
-#form_prt1{
-    margin-right:2em;
-}
-#form_part3 select{
-    margin-top: 1.4em;
-    width: 100.5%;
-    height: 33%;
+
+.custom-select{
+    display: inline-block;
+    width: 104.4%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem 1.75rem .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    vertical-align: middle;
+    background: #fff url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center/8px 10px;
+    border: 1px solid #ced4da;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 #form_part3{
@@ -1178,11 +1221,8 @@ font-size: 1em;
     margin: 8em auto 0 auto;
     color: white;
 }
-#form_part3 *{
-    width: 100%;
-    height: 27%;
-    margin-bottom: 1em;
-    
+#form_part3 select{
+    width:88.8vw;
 }
 
 #sect1_emploi div div{

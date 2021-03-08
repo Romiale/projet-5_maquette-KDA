@@ -540,26 +540,28 @@
             <div class="flex">
                 <div>
                     <div class="flex">
-                         <img src="images/illustrations/call.png" alt="image call">
+                         <img class="illustration" src="images/illustrations/call.png" alt="image call">
+                        <img src="images/illustrations/arrow.png" alt="arrow">
+
                     </div>
                     <p>Appel d’introduction</p>
                 </div>
                 <div >
                     <div>
-                        <img src="images/illustrations/users.png" alt="image users">
+                        <img class="illustration" src="images/illustrations/users.png" alt="image users">
+                        <img src="images/illustrations/arrow.png" alt="arrow">
                     </div>    
                     <p>Proposition de profils</p>
                 </div>
                 <div>
                     <div >
-                        <img src="images/illustrations/call.png" alt="image call">
+                        <img class="illustration" src="images/illustrations/call.png" alt="image call">
+                        <img src="images/illustrations/arrow.png" alt="arrow">
                     </div>
                     <p>Interviews vidéo</p>
                 </div>
                 <div>
-                    <div>
-                        <img src="images/illustrations/user_group.png" alt="image user_group">
-                    </div>
+                    <img class="illustration" src="images/illustrations/user_group.png" alt="image user_group">
                     <p>Onboarding</p>
                 </div>
             </div>
@@ -663,35 +665,59 @@
             <h2 class="t-center">Formulaire de Contact</h2>
             <p class="white titre-niv2 t-center">Si vous souhaitez-vous préinscrire à la Kinshasa Digital Academy veuillez remplir le <strong class="red">formulaire de préinscription</strong>.</p>
 
-            <div class="flexi_col">
-                <div id="form_prt1" class="form_inp">
+            <div class="input-parent flexi_col">
+                <div class="form-inp">
                     <p class="white">Quel titre vous décrit le mieux ?</p>
-                    <select class="select" name="#" id="">
-                        <option value="option1">Option1</option>
+                    <select class="custom-select" name="#" id="">
+                        <option value="consultant">Consultant</option>
+                        <option value="entrepreneur">Entrepreneur</option>
+                        <option value="etudiant">Etudiant</option>
+                        <option value="start-up">Représentant d'une Start-up</option>
+                        <option value="pme">Représentant d'une PME</option>
+                        <option value="grande_entreprise">Représentant d'une Grande entreprise</option>
+                        <option value="ong">Représentant d'une ONG</option>
+                        <option value="autre">Autre</option>
                     </select>
-
-                    <input type="text" placeholder="Prénom">
-                    <input type="text" placeholder="Nom">
-                    <input type="text" placeholder="Télphone">
-                    <input type="text" placeholder="Email">
+                    <input class="form-control" type="text" placeholder="Prénom">
+                    <input class="form-control" type="text" placeholder="Nom">
+                    <input class="form-control" type="text" placeholder="Télphone">
+                    <input class="form-control" type="text" placeholder="Email">
                 </div>
 
-                <div id="form_prt2" class="form_inp">
+                <div class="form-inp">
                     <p class="white">Secteur d'activité</p>
-                    <select class="select" name="#" id="#">
-                        <option value="option1">option1</option>
+                    <select class="custom-select" name="#" id="#">
+                        <option value="Agriculture et foresterie">Agriculture et foresterie</option>
+                        <option value="Aéroport">Aéroport</option>
+                        <option value="Construction">Construction</option>
+                        <option value="Centrées des données / IT">Centrées des données / IT</option>
+                        <option value="Exportateur">Exportateur</option>
+                        <option value="Education">Education</option>
+                        <option value="Gouvernement">Gouvernement</option>
+                        <option value="Services Santé">Services Santé</option>
+                        <option value="Hôpital">Hôpital</option>
+                        <option value="Industrie de manufacturing">Industrie de manufacturing</option>
+                        <option value="Militaire / Défense">Militaire / Défense</option>
+                        <option value="Exploitation Minière">Exploitation Minière</option>
+                        <option value="Petrolière">Petrolière</option>
+                        <option value="Location">Location</option>
+                        <option value="Supermarché / Centre Commercial">Supermarché / Centre Commercial</option>
+                        <option value="Télécommunication">Télécommunication</option>
+                        <option value="Transport">Transport</option>
+                        <option value="Traitement d'eau">Traitement d'eau</option>
+                        <option value="Autre">Autre</option>
                     </select>
-                    <input type="text" placeholder="Nom entreprise">
-                    <input type="text" placeholder="Site web">
-                    <input type="text" placeholder="Ville">
+                    <input class="form-control" type="text" placeholder="Nom entreprise">
+                    <input class="form-control" type="text" placeholder="Site web">
+                    <input class="form-control" type="text" placeholder="Ville">
                 </div>
             </div>
             <div id="form_part3">
                 <span>Type de demande</span>
-                <select class="select" name="#" id="typeDem">
+                <select class="custom-select" name="#" id="typeDem">
                     <option value="option1">  Dévéloppement: site internet</option>
                 </select>
-                <textarea name="message" id="message" cols="30" rows="10">Demande:merci d'exposer le maximum de précisionafin qu'on puisse vous donner une réponse completète</textarea>
+                <textarea class="form-control" id="message" placeholder="Demande : merci d'indiquer le maximum de précision afin qu'on puisse vous donner une réponse complète" wrap="soft" aria-required="true" aria-describedby="messageFeedback" ></textarea>
                 <p class="white mtsr700" >Dû à un nombre important de demandes, nous ne traiterons pas les messages concernant les inscriptions à KDA, inscrivez-vous à l’aide du <span class="red">formulaire.</span> <br>
                 Pour toute demande de devis, merci de nous donner le maximum de détails possible afin de nous aider à vous répondre le plus précisément possible</p>
                 <input id="bg-dark" type="button" value="ENVOYER">
