@@ -58,24 +58,31 @@ nav ul li a{
 
 }
 nav ul li a.active{
-    border-bottom:1.5px solid #FF046B;
+    border-bottom:2px solid #FF046B;
 } 
 
-hr{
-    margin-top: -3px;
-    color:#FF046B;
-    width:0%;
-    height: 1px;
-    background:#FF046B;
-    margin-left: -3px;
-}
- li a:hover + hr{
-    color: #FF046B;
-    width: 100%;
-    background:#FF046B;
-    transition:linear 0.4s;
+
+ 
+.a {
+    position: relative;
     text-decoration: none;
-}
+    color: white    ;
+  }
+   
+  .a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background:#FF046B;
+    transition: width 500ms ease;
+  }
+   
+  .a:hover:after {
+    width: 100%;
+  }
 
 /* section1 page d'acceuil */
 
@@ -572,6 +579,8 @@ div.img-parent{
     align-items: center;
 }
 .badge{
+    color:#ed0058;
+    font-size: 16px;
     background: #fff;
     padding: 0;
     height: 20px;
@@ -1195,7 +1204,7 @@ button, input, optgroup, select, textarea {
     transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-}
+} 
 
 .custom-select{
     display: inline-block;

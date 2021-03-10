@@ -87,74 +87,100 @@
 
     <section id="section11">
         <form action="#">
-        <h2 class="h2_b t-center">Formulaire de Contact</h2>
-        <p class="white h4-M t-center">Si vous souhaitez-vous préinscrire à la Kinshasa Digital Academy veuillez remplir le <strong class="red">formulaire de préinscription</strong>.</p>
+            <h2 class="t-center">Formulaire de Contact</h2>
+            <p class="white t-center">Si vous souhaitez-vous préinscrire à la Kinshasa Digital Academy veuillez remplir le <a class="red a" href="formulaire"> <strong>formulaire de préinscription</strong> </a> </strong>.</p>
 
-        <div class="flexi_col">
-            <div id="form_prt1" class="form_inp">
-                <p class="white">Quel titre vous décrit le mieux ?</p>
-                <select class="select" name="#">
-                    <option value="option1">Option1</option>
-                </select>
+            <div class="input-parent flexi_col">
+                <div class="form-inp">
+                    <p class="white">Quel titre vous décrit le mieux ?</p>
+                    <select class="custom-select" name="#" id="">
+                        <option value="consultant">Consultant</option>
+                        <option value="entrepreneur">Entrepreneur</option>
+                        <option value="etudiant">Etudiant</option>
+                        <option value="start-up">Représentant d'une Start-up</option>
+                        <option value="pme">Représentant d'une PME</option>
+                        <option value="grande_entreprise">Représentant d'une Grande entreprise</option>
+                        <option value="ong">Représentant d'une ONG</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                    <input class="form-control" type="text" placeholder="Prénom">
+                    <input class="form-control" type="text" placeholder="Nom">
+                    <input class="form-control" type="text" placeholder="Télphone">
+                    <input class="form-control" type="text" placeholder="Email">
+                </div>
 
-                <input type="text" placeholder="Prénom">
-                <input type="text" placeholder="Nom">
-                <input type="text" placeholder="Télphone">
-                <input type="text" placeholder="Email">
+                <div class="form-inp">
+                    <p class="white">Secteur d'activité</p>
+                    <select class="custom-select" name="#" id="#">
+                        <option value="Agriculture et foresterie">Agriculture et foresterie</option>
+                        <option value="Aéroport">Aéroport</option>
+                        <option value="Construction">Construction</option>
+                        <option value="Centrées des données / IT">Centrées des données / IT</option>
+                        <option value="Exportateur">Exportateur</option>
+                        <option value="Education">Education</option>
+                        <option value="Gouvernement">Gouvernement</option>
+                        <option value="Services Santé">Services Santé</option>
+                        <option value="Hôpital">Hôpital</option>
+                        <option value="Industrie de manufacturing">Industrie de manufacturing</option>
+                        <option value="Militaire / Défense">Militaire / Défense</option>
+                        <option value="Exploitation Minière">Exploitation Minière</option>
+                        <option value="Petrolière">Petrolière</option>
+                        <option value="Location">Location</option>
+                        <option value="Supermarché / Centre Commercial">Supermarché / Centre Commercial</option>
+                        <option value="Télécommunication">Télécommunication</option>
+                        <option value="Transport">Transport</option>
+                        <option value="Traitement d'eau">Traitement d'eau</option>
+                        <option value="Autre">Autre</option>
+                    </select>
+                    <input class="form-control" type="text" placeholder="Nom entreprise">
+                    <input class="form-control" type="text" placeholder="Site web">
+                    <input class="form-control" type="text" placeholder="Ville">
+                </div>
             </div>
-
-            <div id="form_prt2" class="form_inp">
-                <p class="white">Secteur d'activité</p>
-                <select class="select" name="#" id="#">
-                    <option value="option1">option1</option>
+            <div id="form_part3">
+                <span>Type de demande</span>
+                <select class="custom-select" name="#" id="typeDem">
+                    <option value="option1">  Dévéloppement: site internet</option>
                 </select>
-                <input type="text" placeholder="Nom entreprise">
-                <input type="text" placeholder="Site web">
-                <input type="text" placeholder="Ville">
+                <textarea class="form-control" id="message" placeholder="Demande : merci d'indiquer le maximum de précision afin qu'on puisse vous donner une réponse complète" wrap="soft" aria-required="true" aria-describedby="messageFeedback" ></textarea>
+                <p class="white mstr-s-400" >Dû à un nombre important de demandes, nous ne traiterons pas les messages concernant les inscriptions à KDA, inscrivez-vous à l’aide du<a class="red a">formulaire.</a><br>
+                Pour toute demande de devis, merci de nous donner le maximum de détails possible afin de nous aider à vous répondre le plus précisément possible</p>
+                <input id="bg-dark" type="button" value="ENVOYER">
             </div>
-        </div>
-        <div id="form_part3">
-            <span>Type de demande</span>
-            <select class="select" name="#" id="typeDem">
-                <option value="option1">Dévéloppement: site internet</option>
-            </select>
-            <input type="text">
-            <p class="white mtsr700" >Dû à un nombre important de demandes, nous ne traiterons pas les messages concernant les inscriptions à KDA, inscrivez-vous à l’aide du <span class="red">formulaire.</span> <br>
-            Pour toute demande de devis, merci de nous donner le maximum de détails possible afin de nous aider à vous répondre le plus précisément possible</p>
-            <input id="bg-dark" type="button" value="ENVOYER">
-        </div>
-        
-    </form>
-    </section>
- <footer class="flex">
-     <div>
-         <address class="rbto400">
-             <strong>Kinshasa Digital</strong><br>
-                     Texaf Digital Campus <br>
-                     Concession COTEX (Référence: en face de
-                     l’Ambassade de France) <br>
-                     N° 63 Avenue Colonel Mondjiba <br>
-                     Commune de Ngaliema - Kinshasa <br>
-                     République Démocratique du Congo
-         </address>
-         <div class="rbto400 mt">
-             <a class="red" href="mailto:info@kinshasadigital.com">info@kinshasadigital.com</a> <br>
-             <a class="red" href="tel:+243 891 341 236">+243 891 341 236</a>
-         </div>
-        <div id="reseaux">
+            
+        </form>
+        </section>
+     <footer class="flex">
+         <div>
+             <address class="rbto400">
+                 <strong>Kinshasa Digital</strong><br>
+                         Texaf Digital Campus <br>
+                         Concession COTEX (Référence: en face de
+                         l’Ambassade de France) <br>
+                         N° 63 Avenue Colonel Mondjiba <br>
+                         Commune de Ngaliema - Kinshasa <br>
+                         République Démocratique du Congo
+             </address>
+             <div class="rbto400 mt">
+                 <a class="red mt a" href="mailto:info@kinshasadigital.com">info@kinshasadigital.com </a>
+                 <br>
+                 <a class="red a" href="tel:+243 891 341 236">+243 891 341 236 </a>
+             </div>
+
+             <div id="reseaux">
                 <a href="facebook.com"><img src="images/facebook.svg" alt="image facebook-rect"></a> 
                  <a href="twitter.com"><img src="images/twitter-bird.svg" alt="image twitter"></a>
                  <a href="linkedin.com"><img src="images/linked.svg" alt="image linkedin"></a>
              </div>
-     </div>
+         </div>
 
-     <div>
+         <div>
             <p class="rbto400">Inscrivez-vous à notre newsletter pour vous <br> tenir au courant de nos activités.</p>
-            <div class="flexi_col">
-                <input id="email_foot" type="text" placeholder="Adresse E-mail">
-                <input id="email_btn" type="button" value="S'INSCRIRE">
-            </div>
-     </div>
- </footer>
+                <div class="flexi_col">
+                    <input id="email_foot" type="text" placeholder="Adresse E-mail">
+                    <input id="email_btn" type="button" value="S'INSCRIRE">
+                <div>
+         </div>
+     </footer>
 </body>
 </html>
